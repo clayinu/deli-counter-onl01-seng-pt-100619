@@ -29,7 +29,7 @@ def take_a_number(katz_deli, name)
   end
 end
 
-def now_serving(katz_deli)
+def now_serving(katz_deli, name)
   if katz_deli.size == 0 
     puts "There is nobody waiting to be served!"
   else 

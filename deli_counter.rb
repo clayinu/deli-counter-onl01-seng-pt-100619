@@ -22,8 +22,10 @@ def take_a_number(katz_deli, name)
   welcome = "Welcome, "
   counter = 2
   if katz_deli.size == 0
+    katz_deli.unshift(name)
     puts "Welcome, #{name}. You are number 1 in line." 
   else
+    katz_deli.push(name)
     puts "Welcome, #{name}. You are number #{counter} in line."
     counter += 1
   end
